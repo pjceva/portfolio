@@ -7,6 +7,10 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         background-color: black;
         color: white;
+        .h1{
+            font-size: 40px;
+            color: orange;
+        }
     }
 
 `
