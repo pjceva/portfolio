@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Card = styled.section`
     display: flex;
-    width: 10rem;
-    height: 13rem;
+    width: 14rem;
+    height: 18rem;
     border: 2px solid black;
     border-radius: 10px;
-    margin: 0.5rem auto;
+    margin: 2rem 3rem;
     overflow: hidden;
     img{
         width: 100%;

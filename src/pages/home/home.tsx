@@ -8,7 +8,7 @@ export const Home = () => {
         <>
             <Navbar>
                 <a>Home</a>
-                <a>Skills</a>
+                <a href="#Skill">Skills</a>
                 <a>Trajectory</a>
                 {/* <a>About Me</a> */}
                 <a>Contact</a>
@@ -17,7 +17,7 @@ export const Home = () => {
                 <Content>
                     <TextBox>
                         <span>Hi! I'm Pedro José!</span>
-                        <span className="h1">I'm a Full Stack developer!</span>
+                        <span className="h1">I'm a Full Stack developer!</span> 
                         <span>My goal is to learn as much as I can
                               by practicing, doing projects,
                               and making friends along the way.

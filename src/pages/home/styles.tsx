@@ -10,10 +10,22 @@ export const Navbar = styled.section`
         font-size: 23px;
         font-weight: 400;
         cursor: pointer;
+        :visited{
+            text-decoration: none;
+            color: white;
+        }
+        :hover{
+            color: orange;
+        }
+        :link{
+            text-decoration: none;
+        }
+
     }
-    a:hover{
-        color: orange;
-    }
+
+    
+    
+    
 `
 export const Container = styled.section`
     height: 95vh;
