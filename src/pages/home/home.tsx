@@ -31,7 +31,6 @@ export const Home = () => {
                         </div>
                     </Perfil>
                     
-
                 </Content>
             </Container>
         </>
