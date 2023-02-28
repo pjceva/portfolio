@@ -3,48 +3,55 @@ import styled from "styled-components";
 export const Navbar = styled.section`
     height: 5vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 50px;
+    /* padding: 0 50px; */
     a{
         font-size: 23px;
         font-weight: 400;
         cursor: pointer;
+        :visited{
+            text-decoration: none;
+            color: white;
+        }
+        :hover{
+            color: orange;
+        }
+        :link{
+            text-decoration: none;
+        }
+
     }
-    a:hover{
-        color: orange;
-    }
+
+    
+    
+    
 `
 export const Container = styled.section`
     height: 95vh;
     display: flex;
-    justify-content: center;
+    /* background-color: gray; */
     align-items: center;
+    padding: 0 20%;
+    
 `
 
-export const InfoBox = styled.div`
-    width: 60%;
-    /* background-color: gray; */
-    height: 70vh;
-    color: white;
-    display: flex;
-    img {
-        width: 60%;
-        padding: 0 12vh;
-    }
-`
 
 export const TextBox = styled.div`
-    width: 60%;
-    /* background-color: blue; */
+    flex: 2;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     span{
         font-size: 30px;
     }
 
-    .h1{
-        font-size: 40px;
-        color: orange;
-    }
+`
+
+export const Perfil = styled.div`
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;    
+    img{width: 25vh}
+    
 `
