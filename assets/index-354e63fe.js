@@ -54,6 +54,7 @@ Error generating stack: `+o.message+`
     align-items: center;
     /* padding: 0 50px; */
     a{
+        font-family: "Ubuntu";
         font-size: 23px;
         font-weight: 400;
         cursor: pointer;
