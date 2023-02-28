@@ -4,8 +4,18 @@ export const Card = styled.section`
     display: flex;
     width: 10rem;
     height: 13rem;
-    border: 2px solid orange;
-    border-radius: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
     margin: 0.5rem auto;
+    overflow: hidden;
+    img{
+        width: 100%;
+        border-radius: 10px;
+        transition: 0.5s;
+        :hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
 
 `
