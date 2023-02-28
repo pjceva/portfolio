@@ -18,7 +18,7 @@ export const Navbar = styled.section`
 export const Container = styled.section`
     height: 95vh;
     display: flex;
-    justify-content: center;
+    /* background-color: gray; */
     align-items: center;
     padding: 0 20%;
     
