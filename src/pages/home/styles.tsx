@@ -3,8 +3,11 @@ import styled from "styled-components";
 export const Navbar = styled.section`
     height: 5vh;
     display: flex;
+    width: 100%;
+    background-color: black;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
     /* padding: 0 50px; */
     a{
         font-family: "Ubuntu";
@@ -15,11 +18,12 @@ export const Navbar = styled.section`
             text-decoration: none;
             color: white;
         }
-        :hover{
-            color: orange;
-        }
         :link{
             text-decoration: none;
+            color: white;
+        }
+        :hover{
+            color: orange;
         }
 
     }

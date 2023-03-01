@@ -7,13 +7,13 @@ export const Home = () => {
     return (
         <>
             <Navbar>
-                <a>Home</a>
+                <a href="#Home">Home</a>
                 <a href="#Skill">Skills</a>
                 <a>Trajectory</a>
                 {/* <a>About Me</a> */}
                 <a>Contact</a>
             </Navbar>
-            <Container>
+            <Container id="Home">
                 <Content>
                     <TextBox>
                         <span>Hi! I'm Pedro José!</span>
