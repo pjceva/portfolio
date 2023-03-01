@@ -28,9 +28,6 @@ export const Navbar = styled.section`
 
     }
 
-    
-    
-    
 `
 export const Container = styled.section`
     height: 95vh;
