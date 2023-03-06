@@ -1,6 +1,7 @@
 import { Container, Navbar, Perfil, TextBox } from "./styles"
 import PerfilImg from "../../imgs/perfil.png"
 import { Content } from "../../components/Content/styles"
+import { TypeAnimation } from "react-type-animation"
 
 
 export const Home = () => {
@@ -16,8 +17,17 @@ export const Home = () => {
             <Container id="Home">
                 <Content>
                     <TextBox>
-                        <span>Hi! I'm Pedro José!</span>
-                        <span className="h1">I'm a Full Stack developer!</span> 
+                        <span className="h1">
+                        <TypeAnimation sequence={[
+                            "Hi! I'm Pedro José!",
+                            2000,
+                            "I'm a Full Stack developer!",
+                            2000,
+                        ]}
+                        speed={50}
+                        repeat={Infinity}
+                        />
+                        </span> 
                         <span>My goal is to learn as much as I can
                               by practicing, doing projects,
                               and making friends along the way.
