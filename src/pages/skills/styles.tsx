@@ -1,1 +1,1 @@
-import styled from "styled-components";
+import styleda from "styled-components";

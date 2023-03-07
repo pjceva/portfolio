@@ -6,5 +6,5 @@ export const Content = styled.section`
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    
+    /* background-color: gray; */
 `

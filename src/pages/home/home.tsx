@@ -12,7 +12,7 @@ export const Home = () => {
                 <a href="#Skill">Skills</a>
                 <a>Trajectory</a>
                 {/* <a>About Me</a> */}
-                <a>Contact</a>
+                <a href="#Contact">Contact</a>
             </Navbar>
             <Container id="Home">
                 <Content>
