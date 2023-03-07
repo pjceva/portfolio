@@ -1,4 +1,4 @@
-import { Container, Navbar, Perfil, TextBox } from "./styles"
+import { Container, Links, Logo, MenuButton, Navbar, Perfil, TextBox } from "./styles"
 import PerfilImg from "../../imgs/perfil.png"
 import { Content } from "../../components/Content/styles"
 import { TypeAnimation } from "react-type-animation"
@@ -7,12 +7,24 @@ import { TypeAnimation } from "react-type-animation"
 export const Home = () => {
     return (
         <>
-            <Navbar>
+            {/* <Navbar>
                 <a href="#Home">Home</a>
                 <a href="#Skill">Skills</a>
                 <a>Trajectory</a>
-                {/* <a>About Me</a> */}
+                <a>About Me</a>
                 <a href="#Contact">Contact</a>
+            </Navbar> */}
+            <Navbar>
+                <Logo>PZE</Logo>
+                <Links>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Skill">Skills</a></li>
+                    <li><a href="#Trajectory">Trajectory</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </Links>
+                <MenuButton>
+                    <i className="fa-solid fa-bars"></i>
+                </MenuButton>
             </Navbar>
             <Container id="Home">
                 <Content>
