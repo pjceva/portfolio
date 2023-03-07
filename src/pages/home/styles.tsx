@@ -33,7 +33,7 @@ export const Navbar = styled.section`
     
 `
 export const Container = styled.section`
-    height: 95vh;
+    min-height: 95vh;
     display: flex;
     /* background-color: gray; */
     align-items: center;
