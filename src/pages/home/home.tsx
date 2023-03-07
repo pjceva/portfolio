@@ -24,7 +24,7 @@ export const Home = () => {
                             "I'm a Full Stack developer!",
                             2000,
                         ]}
-                        speed={50}
+                        speed={65}
                         repeat={Infinity}
                         />
                         </span> 
