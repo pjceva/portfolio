@@ -38,15 +38,6 @@ export const Navbar = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: green; */
-`
-export const Logo = styled.div`
-    
-`
-
-export const Links = styled.ul`
-    display: flex;
-    gap: 2rem;
     li{
         list-style: none;
     }
@@ -58,6 +49,47 @@ export const Links = styled.ul`
             color: orange;
         }
     }
+    
+    /* background-color: green; */
+
+
+    @media (max-width: 900px){
+        .li{
+            display: none;
+        }
+        .menu_btn{
+            display: block;
+        }
+    }
+`
+export const DropDown = styled.div`
+    position: absolute;
+    display: none;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+
+    li{
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+     
+`
+
+export const Logo = styled.div`
+    
+`
+
+export const Links = styled.ul`
+    display: flex;
+    gap: 2rem;
+    
 `
 
 export const MenuButton = styled.div`
@@ -94,6 +126,6 @@ export const Perfil = styled.div`
     img{width: 25vh}
     
 `
-//Responsive
+
 
 
