@@ -6,6 +6,10 @@ import { useState } from "react"
 
 
 export const Home = () => {
+    
+    const [navbar, setNavbar] = useState(true)
+
+    const showNavbar = () => setNavbar(!navbar)
 
     return (
         <>
@@ -24,8 +28,9 @@ export const Home = () => {
                     <li><a href="#Trajectory">Trajectory</a></li>
                     <li><a href="#Contact">Contact</a></li>
                 </Links>
-                <MenuButton className="menu_btn">
-                    <i className="fa-solid fa-bars"></i>
+                <MenuButton className="menu_btn" onClick={showNavbar}>
+                    <i className={navbar ? "fa-solid fa-bars" : "fa-solid fa-xmark"}></i>
+                    {/* <i className="fa-solid fa-bars"></i> */}
                 </MenuButton>
                 <DropDown>
                     <li><a href="#Home">Home</a></li>
