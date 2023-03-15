@@ -15,6 +15,13 @@ export const GlobalStyle = createGlobalStyle`
             font-size: 40px;
             color: orange;
         }
+        ::-webkit-scrollbar {
+        width: 5px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: rgba(255, 255, 255, 0.35);
+            border-radius: 10px;
+        }
     }
 
 `

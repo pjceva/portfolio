@@ -2,9 +2,11 @@ import { Container, DropDown, Links, Logo, MenuButton, Navbar, Perfil, TextBox }
 import PerfilImg from "../../imgs/perfil.png"
 import { Content } from "../../components/Content/styles"
 import { TypeAnimation } from "react-type-animation"
+import { useState } from "react"
 
 
 export const Home = () => {
+
     return (
         <>
             {/* <Navbar>
