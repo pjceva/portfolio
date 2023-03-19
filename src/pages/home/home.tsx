@@ -1,4 +1,4 @@
-import { Container, DropDown, Links, Logo, MenuButton, Navbar, Perfil, TextBox } from "./styles"
+import { Container, Header, Links, MenuButton, Navbar, Perfil, TextBox } from "./styles"
 import PerfilImg from "../../imgs/perfil.png"
 import { Content } from "../../components/Content/styles"
 import { TypeAnimation } from "react-type-animation"
@@ -20,25 +20,27 @@ export const Home = () => {
                 <a>About Me</a>
                 <a href="#Contact">Contact</a>
             </Navbar> */}
-            <Navbar>
-                <Logo>PZE</Logo>
-                <Links className="li">
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Skill">Skills</a></li>
-                    <li><a href="#Trajectory">Trajectory</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </Links>
-                <MenuButton className="menu_btn" onClick={showNavbar}>
-                    <i className={navbar ? "fa-solid fa-bars" : "fa-solid fa-xmark"}></i>
-                    {/* <i className="fa-solid fa-bars"></i> */}
-                </MenuButton>
-                <DropDown>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#Skill">Skills</a></li>
-                    <li><a href="#Trajectory">Trajectory</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </DropDown>
-            </Navbar>
+            <Header>
+                <Navbar>
+                    <div className="logo">PZE</div>
+                    <Links className="li">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Skill">Skills</a></li>
+                        <li><a href="#Trajectory">Trajectory</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </Links>
+                    <MenuButton className="menu_btn" onClick={showNavbar}>
+                        <i className={navbar ? "fa-solid fa-bars" : "fa-solid fa-xmark"}></i>
+                        {/* <i className="fa-solid fa-bars"></i> */}
+                    </MenuButton>
+                        <section className={navbar ? "hide" : "show"}>
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#Skill">Skills</a></li>
+                            <li><a href="#Trajectory">Trajectory</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                        </section>
+                </Navbar>
+            </Header>
             <Container id="Home">
                 <Content>
                     <TextBox>

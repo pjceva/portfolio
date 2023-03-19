@@ -1,43 +1,22 @@
 import styled from "styled-components";
 
-// export const Navbar = styled.section`
-//     height: 5vh;
-//     display: flex;
-//     width: 100%;
-//     background-color: black;
-//     justify-content: space-around;
-//     align-items: center;
-//     position: fixed;
-//     /* padding: 0 50px; */
-//     a{
-//         font-family: "Ubuntu";
-//         font-size: 23px;
-//         font-weight: 400;
-//         cursor: pointer;
-//         :visited{
-//             text-decoration: none;
-//             color: white;
-//         }
-//         :link{
-//             text-decoration: none;
-//             color: white;
-//         }
-//         :hover{
-//             color: orange;
-//         }
+export const Header = styled.div`
+    display: flex;
+    justify-content: center;
+`
 
-//     }
-    
-// `
 
 export const Navbar = styled.div`
-    width: 100%;
+    width: 85%;
     height: 60px;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    background-color: black;
+    
     li{
         list-style: none;
     }
@@ -49,9 +28,31 @@ export const Navbar = styled.div`
             color: orange;
         }
     }
+    section{
+        display: none;
+        position: absolute;
+        right: 2rem;
+        top: 60px;
+        width: 300px;
+        height: 0px;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        li{
+            padding: 0.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    }
+    .show{
+        height: 162px;
+    }
     
     /* background-color: green; */
-
 
     @media (max-width: 900px){
         .li{
@@ -60,37 +61,25 @@ export const Navbar = styled.div`
         .menu_btn{
             display: block;
         }
+        section{
+            display: block;
+        }
+        
     }
-`
-export const DropDown = styled.div`
-    position: absolute;
-    display: none;
-    right: 2rem;
-    top: 60px;
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
 
-    li{
-        padding: 0.7rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    @media (max-width: 576px) {
+        section{
+            left: 2rem;
+            width: unset;
+        }
     }
-     
-`
 
-export const Logo = styled.div`
-    
 `
-
 export const Links = styled.ul`
     display: flex;
     gap: 2rem;
     
-`
+`   
 
 export const MenuButton = styled.div`
     color: white;
@@ -98,6 +87,7 @@ export const MenuButton = styled.div`
     cursor: pointer;
     display: none;
 `
+
 
 export const Container = styled.section`
     min-height: 95vh;
@@ -129,3 +119,33 @@ export const Perfil = styled.div`
 
 
 
+
+// export const Navbar = styled.section`
+//     height: 5vh;
+//     display: flex;
+//     width: 100%;
+//     background-color: black;
+//     justify-content: space-around;
+//     align-items: center;
+//     position: fixed;
+//     /* padding: 0 50px; */
+//     a{
+//         font-family: "Ubuntu";
+//         font-size: 23px;
+//         font-weight: 400;
+//         cursor: pointer;
+//         :visited{
+//             text-decoration: none;
+//             color: white;
+//         }
+//         :link{
+//             text-decoration: none;
+//             color: white;
+//         }
+//         :hover{
+//             color: orange;
+//         }
+
+//     }
+    
+// `
