@@ -1,19 +1,41 @@
-import { Container, Navbar, Perfil, TextBox } from "./styles"
+import { Container, Header, Links, MenuButton, Navbar, Perfil, TextBox } from "./styles"
 import PerfilImg from "../../imgs/perfil.png"
 import { Content } from "../../components/Content/styles"
 import { TypeAnimation } from "react-type-animation"
+import { useState } from "react"
 
 
 export const Home = () => {
+    
+    const [navbar, setNavbar] = useState(true)
+
+    const showNavbar = () => setNavbar(!navbar)
+
     return (
         <>
-            <Navbar>
-                <a href="#Home">Home</a>
-                <a href="#Skill">Skills</a>
-                <a>Trajectory</a>
-                {/* <a>About Me</a> */}
-                <a>Contact</a>
-            </Navbar>
+            <Header>
+                <Navbar>
+                    <div className="logo">PZE</div>
+                    <Links className="li">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Skill">Skills</a></li>
+                        <li><a href="#Trajectory">Trajectory</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </Links>
+                    <MenuButton className="menu_btn" onClick={showNavbar}>
+                        <i className={navbar ? "fa-solid fa-bars" : "fa-solid fa-xmark"}></i>
+                        {/* <i className="fa-solid fa-bars"></i> */}
+                    </MenuButton>
+                        <section className={navbar ? "hide" : "show"}>
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#Skill">Skills</a></li>
+                            <li><a href="#Trajectory">Trajectory</a></li>
+                            <li><a href="#Contact">Contact</a></li>
+                        </section>
+                </Navbar>
+
+            </Header>
+                
             <Container id="Home">
                 <Content>
                     <TextBox>
@@ -24,8 +46,8 @@ export const Home = () => {
                             "I'm a Full Stack developer!",
                             2000,
                         ]}
-                        speed={50}
-                        repeat={Infinity}
+                        speed={65}
+                        repeat={2}
                         />
                         </span> 
                         <span>My goal is to learn as much as I can
