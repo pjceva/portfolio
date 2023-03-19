@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const Header = styled.div`
+    display: flex;
+    justify-content: center;
+`
+
 export const Navbar = styled.div`
     width: 100%;
     height: 60px;
@@ -14,6 +19,9 @@ export const Navbar = styled.div`
         padding: 0 2rem;
     }
     .menu_btn{
+        padding: 0 2rem;
+    }
+    .li{
         padding: 0 2rem;
     }
     
@@ -116,36 +124,3 @@ export const Perfil = styled.div`
     img{width: 25vh}
     
 `
-
-
-
-
-// export const Navbar = styled.section`
-//     height: 5vh;
-//     display: flex;
-//     width: 100%;
-//     background-color: black;
-//     justify-content: space-around;
-//     align-items: center;
-//     position: fixed;
-//     /* padding: 0 50px; */
-//     a{
-//         font-family: "Ubuntu";
-//         font-size: 23px;
-//         font-weight: 400;
-//         cursor: pointer;
-//         :visited{
-//             text-decoration: none;
-//             color: white;
-//         }
-//         :link{
-//             text-decoration: none;
-//             color: white;
-//         }
-//         :hover{
-//             color: orange;
-//         }
-
-//     }
-    
-// `
