@@ -1,13 +1,7 @@
 import styled from "styled-components";
 
-export const Header = styled.div`
-    display: flex;
-    justify-content: center;
-`
-
-
 export const Navbar = styled.div`
-    width: 85%;
+    width: 100%;
     height: 60px;
     max-width: 1200px;
     margin: 0 auto;
@@ -16,6 +10,12 @@ export const Navbar = styled.div`
     justify-content: space-between;
     position: fixed;
     background-color: black;
+    .logo{
+        padding: 0 2rem;
+    }
+    .menu_btn{
+        padding: 0 2rem;
+    }
     
     li{
         list-style: none;
