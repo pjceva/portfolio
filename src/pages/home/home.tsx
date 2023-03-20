@@ -41,7 +41,7 @@ export const Home = () => {
                         <span className="h1">
                         <TypeAnimation sequence={[
                             "Welcome",
-                            4000,
+                            3500,
                             "I'm Pedro José Rodrigues",
                             2000,
                             "I'm a Full Stack developer!",
