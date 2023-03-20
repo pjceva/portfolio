@@ -33,7 +33,6 @@ export const Home = () => {
                             <li><a href="#Contact">Contact</a></li>
                         </section>
                 </Navbar>
-
             </Header>
                 
             <Container id="Home">
