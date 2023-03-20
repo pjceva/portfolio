@@ -6,6 +6,7 @@ export const Card = styled.section`
     height: 30vh;
     border-radius: 10px;
     margin: 0 7.1%;
+    overflow: hidden;
     /* overflow: hidden;
     :hover{
         border: 1px solid orange;

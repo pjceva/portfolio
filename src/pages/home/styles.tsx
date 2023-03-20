@@ -15,6 +15,7 @@ export const Navbar = styled.div`
     justify-content: space-between;
     position: fixed;
     background-color: black;
+    z-index: 1;
     .logo{
         padding: 0 2rem;
     }
