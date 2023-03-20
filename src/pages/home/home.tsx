@@ -45,7 +45,6 @@ export const Home = () => {
                             "I'm Pedro José Rodrigues",
                             2000,
                             "I'm a Full Stack developer!",
-
                         ]}
                         speed={60}
                         repeat={0}
