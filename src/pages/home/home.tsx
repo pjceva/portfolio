@@ -40,13 +40,15 @@ export const Home = () => {
                     <TextBox>
                         <span className="h1">
                         <TypeAnimation sequence={[
-                            "Hi! I'm Pedro José!",
+                            "Welcome",
+                            4000,
+                            "I'm Pedro José Rodrigues",
                             2000,
                             "I'm a Full Stack developer!",
-                            2000,
+
                         ]}
-                        speed={65}
-                        repeat={2}
+                        speed={60}
+                        repeat={0}
                         />
                         </span> 
                         <span>My goal is to learn as much as I can
