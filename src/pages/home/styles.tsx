@@ -5,21 +5,29 @@ export const Content = styled.section`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    span{
-        font-size: 30px;
+    /* background-color: gray; */
+    
+    span {font-size: 30px;}
+    img {width: 25vh;}
+    @media (max-width: 1086px) {
+        img{
+            display: none;
+        }
     }
+    @media (max-width: 825px) {
+        span{
+            font-size: 20px;
+        }
+    }
+
 `
 
+export const Title = styled.div`
+    width: 100%;
+    height: 80px;
+    /* background-color: white; */
 
-
-
-
-
-
-
-
-
-
+`
 
 
 
