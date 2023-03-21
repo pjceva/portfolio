@@ -9,10 +9,9 @@ export const Home = () => {
     return (
         <>
             <Navbar />
-            <Screen>
+            <Screen id="Home">
                 <Content>
-                    <div>
-                        <Title>
+                    <Title>
                             <span className="h1">
                             <TypeAnimation sequence={[
                                 "Welcome",
@@ -24,15 +23,13 @@ export const Home = () => {
                             speed={60}
                             repeat={0}
                             />
-                            </span>  
-                        </Title>
-                        
+                            </span>
                         <span>My goal is to learn as much as I can
                               by practicing, doing projects,
                               and making friends along the way. 
                               I dream of becoming part of a company
                         </span>
-                    </div>
+                    </Title>
                     <img src={PerfilImg} />
                 </Content>
             </Screen>

@@ -9,8 +9,8 @@ function App() {
     <>
       <GlobalStyle />
       <Home />
-      {/* <Skills /> */}
-      {/* <Contact /> */}
+      <Skills />
+      <Contact />
     </>
     
   )

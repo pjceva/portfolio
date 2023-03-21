@@ -22,9 +22,14 @@ export const GlobalStyle = createGlobalStyle`
             background: rgba(255, 255, 255, 0.35);
             border-radius: 10px;
         }
-        @media (max-width: 825px) {
+        @media (max-width: 640px) {
             .h1{
-                font-size: 30px;
+                font-size: 35px;
+            }
+        }
+        @media (max-width: 400px) {
+            .h1{
+                font-size: 22px;
             }
         }
     }

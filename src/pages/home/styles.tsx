@@ -2,19 +2,25 @@ import styled from "styled-components";
 
 export const Content = styled.section`
     max-width: 1200px;
+    height: 40vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     /* background-color: gray; */
     
     span {font-size: 30px;}
-    img {width: 25vh;}
+    img {height: 40vh;}
     @media (max-width: 1086px) {
         img{
             display: none;
         }
     }
-    @media (max-width: 825px) {
+    @media (max-width: 640px) {
+        span{
+            font-size: 25px;
+        }
+    }
+    @media (max-width: 400px) {
         span{
             font-size: 20px;
         }
@@ -23,9 +29,9 @@ export const Content = styled.section`
 `
 
 export const Title = styled.div`
-    width: 100%;
-    height: 80px;
-    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 `
 
