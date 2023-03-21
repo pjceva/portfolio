@@ -1,5 +1,33 @@
 import styled from "styled-components";
 
+export const Content = styled.section`
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    span{
+        font-size: 30px;
+    }
+`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 export const Container = styled.section`
     min-height: 95vh;
     display: flex;
