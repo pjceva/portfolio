@@ -34,7 +34,7 @@ export const Container = styled.div`
         color: white;
         font-size: 1rem;
         :hover{
-            color: orange;
+            color: #067ceb;
         }
     }
     section{
