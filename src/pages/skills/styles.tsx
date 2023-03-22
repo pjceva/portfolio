@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import python from "../../imgs/python.png"
+import react from "../../imgs/react.png"
+import git from "../../imgs/git.png"
 
 export const Card = styled.section`
     display: flex;
@@ -25,17 +28,34 @@ export const Card = styled.section`
 
 export const Container = styled.div`
     max-width: 1200px;
+    height: 60vh;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: gray;
-    /* transform: translate(-50%, -50%); */
+    /* background-color: gray; */
     overflow: hidden;
 
-    .Img1{
+    div{
         height: 40%;
         width: 30%;
-        background-image: url(python.png)
+        background-image: url(${python});
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        cursor: pointer;
+        transition: 1s;
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgba(245, 245, 245, 0.35);
+
+
+    }
+    .react{
+        background-image: url(${react});
+    }
+    .git{
+        background-image: url(${git});
     }
     
 `

@@ -12,22 +12,12 @@ export const Skills = () => {
             
             <span className="h1">What did I learn?</span>
             <Container>
-                <div className="Img1">
-                    <div className="one">
-                        <h1>Image 1</h1>
-                    </div>
-
-                </div>
-                <div className="Img2">
-                <div className="two">
-                    <h1>Image 2</h1>
-                </div>
-                </div>
-                <div className="Img3">
-                    <div className="three">
-                        <h1>Image 3</h1>
-                    </div>
-                </div>
+                <div className="python"></div>
+                <div className="react"></div>
+                <div className="git"></div>
+                <div className="python"></div>
+                <div className="react"></div>
+                <div className="python"></div>
             </Container>
 
 
