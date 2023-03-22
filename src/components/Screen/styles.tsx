@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Screen = styled.section`
-    /* min-height: 85vh; */
-    /* background-color: gray; */
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
-    padding: 7.5vh 20%;
+    padding: 0 20%;
+    justify-content: center;
+    /* background-color: gray; */
 `

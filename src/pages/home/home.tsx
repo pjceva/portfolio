@@ -1,71 +1,46 @@
-import { Container, Header, Links, MenuButton, Navbar, Perfil, TextBox } from "./styles"
-import PerfilImg from "../../imgs/perfil.png"
-import { Content } from "../../components/Content/styles"
+import { Content, ImgBox, TextBox, Title } from "./styles"
+import PerfilImg from "../../imgs/pze.png"
 import { TypeAnimation } from "react-type-animation"
-import { useState } from "react"
-
+import { Navbar } from "../../components/Navbar"
+import { Screen } from "../../components/Screen/styles"
 
 export const Home = () => {
-    
-    const [navbar, setNavbar] = useState(true)
-
-    const showNavbar = () => setNavbar(!navbar)
 
     return (
         <>
-            <Header>
-                <Navbar>
-                    <div className="logo">PZE</div>
-                    <Links className="li">
-                        <li><a href="#Home">Home</a></li>
-                        <li><a href="#Skill">Skills</a></li>
-                        <li><a href="#Trajectory">Trajectory</a></li>
-                        <li><a href="#Contact">Contact</a></li>
-                    </Links>
-                    <MenuButton className="menu_btn" onClick={showNavbar}>
-                        <i className={navbar ? "fa-solid fa-bars" : "fa-solid fa-xmark"}></i>
-                        {/* <i className="fa-solid fa-bars"></i> */}
-                    </MenuButton>
-                        <section className={navbar ? "hide" : "show"}>
-                            <li><a href="#Home">Home</a></li>
-                            <li><a href="#Skill">Skills</a></li>
-                            <li><a href="#Trajectory">Trajectory</a></li>
-                            <li><a href="#Contact">Contact</a></li>
-                        </section>
-                </Navbar>
-            </Header>
-                
-            <Container id="Home">
-                <Content>
-                    <TextBox>
-                        <span className="h1">
+            <Navbar />
+            <Screen id="Home">
+                <Title>
+                    <span className="h1">
                         <TypeAnimation sequence={[
                             "Welcome",
                             3500,
                             "I'm Pedro José Rodrigues",
                             2000,
                             "I'm a Full Stack developer!",
-
                         ]}
                         speed={60}
                         repeat={0}
                         />
-                        </span> 
-                        <span>My goal is to learn as much as I can
-                              by practicing, doing projects,
-                              and making friends along the way.
                         </span>
-                        <span>I dream of becoming part of a company </span>
-                        
+                    </Title>
+                <Content>
+                    <TextBox>
+                        <span>
+                        orem ipsum dolor sit amet, consectetur adi
+                        piscing elit, sed do eiusmod tempor incidid
+                        unt ut labore et dolore magna aliqua. Ut enim a
+                        d minim veniam, quis nostrud exercitation ullamco labo
+                        ris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in volup
+                        ate est laborum.
+                        </span>
                     </TextBox>
-                    <Perfil>
-                        <div>
+                    <ImgBox>
                         <img src={PerfilImg} />
-                        </div>
-                    </Perfil>
-                    
+                    </ImgBox>
                 </Content>
-            </Container>
+            </Screen>
         </>
     )
 }
