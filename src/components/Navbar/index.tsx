@@ -11,7 +11,7 @@ export const Navbar = () => {
     return (
         <Header>
             <Container>
-                <img className="logo" src={logo}/>
+                <a href="#Home"><img className="logo" src={logo}/></a>
                 <Links className="li">
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#Skill">Skills</a></li>
