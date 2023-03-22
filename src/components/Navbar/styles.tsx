@@ -34,8 +34,12 @@ export const Container = styled.div`
         color: white;
         font-size: 1rem;
         :hover{
-            color: #067ceb;
+            color: #AEA1EA;
         }
+    }
+    img{
+        width: 5rem;
+        
     }
     section{
         display: none;
