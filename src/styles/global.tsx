@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
         color: white;
         .h1{
             font-size: 40px;
-            color: #067ceb;
+            color: #AEA1EA;
         }
         ::-webkit-scrollbar {
         width: 5px;

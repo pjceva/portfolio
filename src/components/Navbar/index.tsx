@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Container, Header, Links, MenuButton } from "./styles"
+import logo from "../../imgs/logo.png"
 
 export const Navbar = () => {
         
@@ -10,7 +11,7 @@ export const Navbar = () => {
     return (
         <Header>
             <Container>
-                <div className="logo">PZE</div>
+                <img className="logo" src={logo}/>
                 <Links className="li">
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#Skill">Skills</a></li>
