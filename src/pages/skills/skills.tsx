@@ -10,7 +10,7 @@ export const Skills = () => {
     return (
         <Screen id="Skill">
             <span className="h1">What did I learn?</span>
-            <Content>
+            {/* <Content>
                 <Card><img src={python}/></Card>
                 <Card><img src={reactjs}/></Card>
                 <Card><img src={github}/></Card>
@@ -18,7 +18,7 @@ export const Skills = () => {
                 <Card><img src={python}/></Card>
                 <Card><img src={python}/></Card>
                 
-            </Content>
+            </Content> */}
         </Screen>
     )
 }
