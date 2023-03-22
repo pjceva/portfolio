@@ -39,17 +39,35 @@ export const Container = styled.div`
     div{
         height: 40%;
         width: 30%;
-        background-image: url(${python});
+        /* background-image: url(${python}); */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
         overflow: hidden;
         cursor: pointer;
-        transition: 1s;
+        transition: 0.7s;
         border-radius: 10px;
         box-shadow: 0px 5px 15px rgba(245, 245, 245, 0.35);
 
+        :hover .about{
+            position: relative;
+            top:0;
+            left: 0;
+            cursor: pointer;
+        }
 
+        .about{
+            position: relative;
+            top: 0;
+            left: -411px;
+            background-color: rgba(0,0,0,0.7);
+            height: 100%;
+            width: 100%;
+        }
+
+    }
+    .python{
+        background-image: url(${python});
     }
     .react{
         background-image: url(${react});
