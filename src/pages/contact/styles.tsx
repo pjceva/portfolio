@@ -38,13 +38,15 @@ export const Message = styled.input`
 
 export const SendButton = styled.button`
     margin-top: 2.5vh;
-    width: 10%;
-    height: 2.5vh;
+    width: 15%;
+    min-width: 50px;
+    height: 3vh;
     border-radius: 5px;
     background-color: #AEA1EA;
     border: none;
     cursor: pointer;
     font-family: 'Ubuntu';
     margin-bottom: 2vh;
+    color: black;
 
 `
