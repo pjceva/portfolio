@@ -6,7 +6,6 @@ export const Content = styled.section`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* background-color: gray; */
     
     span {font-size: 30px;}
     img {
