@@ -34,6 +34,7 @@ export const Title = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 2rem;
     @media (max-width: 400px) {
         height: 4rem;
     }
