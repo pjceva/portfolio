@@ -38,7 +38,7 @@ export const Container = styled.div`
     overflow: hidden;
 
     @media (max-width: 520px){
-            height: 90vh;
+            height: 120vh;
         }
 
     div{
@@ -51,9 +51,9 @@ export const Container = styled.div`
         overflow: hidden;
         cursor: pointer;
         transition: 0.7s;
-        border-radius: 10px;
+        /* border-radius: 10px; */
         box-shadow: 0px 5px 15px rgba(245, 245, 245, 0.35);
-
+        padding-right: 3px;
         :hover .about{
             position: relative;
             top:0;
@@ -68,7 +68,8 @@ export const Container = styled.div`
             background-color: rgba(0,0,0,0.7);
             height: 100%;
             width: 100%;
-            padding: 0 10px;
+            padding-left: 3px;
+
         }
 
         @media (max-width: 950px){
