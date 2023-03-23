@@ -15,11 +15,23 @@ export const Skills = () => {
                 <div className="python">
                     <div className="about">
                         <h1>Python</h1>
+                        <span>Meu primeiro contato com python foi 
+                            no curso CS50 de harvard. Desde então 
+                            é a minha linguagem favorita...
+                        </span>
                     </div>
 
                 </div>
-                <div className="react"></div>
-                <div className="git"></div>
+                <div className="react">
+                    <div className="about">
+                        <h1>React</h1>
+                    </div>
+                </div>
+                <div className="git">
+                    <div className="about">
+                        <h1>Git</h1>
+                    </div>
+                </div>
                 <div className="python"></div>
                 <div className="react"></div>
                 <div className="python"></div>

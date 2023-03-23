@@ -68,16 +68,29 @@ export const Container = styled.div`
             background-color: rgba(0,0,0,0.7);
             height: 100%;
             width: 100%;
+            padding: 0 10px;
         }
 
         @media (max-width: 950px){
             height: 30%;
             width: 40%;
+            h1{
+                font-size: 1.3rem;
+            }
+            span{
+                font-size: 0.9rem;
+            }
         }
         @media (max-width: 520px){
             width: 90%;
             height: 15%;
             box-shadow: 1px 3px 10px rgba(245, 245, 245, 0.35);
+            h1{
+                font-size: 1rem;
+            }
+            span{
+                font-size: 0.85rem;
+            }
         }
 
     }
