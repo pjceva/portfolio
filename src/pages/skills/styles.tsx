@@ -33,8 +33,13 @@ export const Container = styled.div`
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    padding: 1rem 0;
     /* background-color: gray; */
     overflow: hidden;
+
+    @media (max-width: 520px){
+            height: 90vh;
+        }
 
     div{
         height: 40%;
@@ -63,6 +68,16 @@ export const Container = styled.div`
             background-color: rgba(0,0,0,0.7);
             height: 100%;
             width: 100%;
+        }
+
+        @media (max-width: 950px){
+            height: 30%;
+            width: 40%;
+        }
+        @media (max-width: 520px){
+            width: 90%;
+            height: 15%;
+            box-shadow: 1px 3px 10px rgba(245, 245, 245, 0.35);
         }
 
     }

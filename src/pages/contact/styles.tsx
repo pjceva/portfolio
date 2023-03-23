@@ -41,7 +41,7 @@ export const SendButton = styled.button`
     width: 10%;
     height: 2.5vh;
     border-radius: 5px;
-    background-color: #067ceb;
+    background-color: #AEA1EA;
     border: none;
     cursor: pointer;
     font-family: 'Ubuntu';
