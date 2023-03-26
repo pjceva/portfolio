@@ -15,6 +15,26 @@ export const GlobalStyle = createGlobalStyle`
             font-size: 40px;
             color: #AEA1EA;
         }
+        .btn{
+            display: block;
+            margin: 50px auto;
+            width: fit-content;
+            border: 1px solid #AEA1EA;
+            padding: 14px 50px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #fff;
+            transition: background 0.5s;
+            :hover{
+                background: #AEA1EA;
+                cursor: pointer;
+            }
+        }
+
+        .black{
+            background: black;
+        }
+        
         ::-webkit-scrollbar {
         width: 5px;
         }
