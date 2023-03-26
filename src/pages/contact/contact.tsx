@@ -1,29 +1,12 @@
-// import { Screen } from "../../components/Screen/styles"
-// import { Email, Name, Message, Container, SendButton } from "./styles"
-
 import { Screen } from "../../components/Screen/styles"
 import { Container } from "./styles"
 import CV from "../../imgs/CVPedroJose.pdf"
 
-// export const Contact = () => {
-//     return (
-//         <Screen id="Contact">
-//         <span className="h1">Contact</span>
-
-//         <Container>
-//             <Name placeholder="Name" />
-//             <Email placeholder="Email" />
-//             <Message placeholder="Message" />
-//             <SendButton>Send</SendButton>
-//         </Container>
-//         </Screen>
-//     )
-// }
-
-
 export const Contact = () =>{
     return (
+        
         <Screen>
+            
                 <Container id="Contact">
                         <div className="contact-left">
                             <span className="h1">Contact Me</span>
@@ -38,10 +21,11 @@ export const Contact = () =>{
                         <div className="contact-right">
                             <form>
                                 <input type="text" name="Name" placeholder="Your name" required />
-                                <input type="email" name="email" placeholder="Your email" required/>
+                                <input type="email" name="Email" placeholder="Your email" required/>
                                 <textarea name="Message" rows={6} placeholder="Your message"></textarea>
-                                <button type="submit">Submit</button>
+                                <button type="submit" className="btn black btn2">Submit</button>
                             </form>
+                            
                         </div>
                     
                 </Container>

@@ -27,7 +27,12 @@ export const GlobalStyle = createGlobalStyle`
             transition: background 0.5s;
             :hover{
                 background: #AEA1EA;
+                cursor: pointer;
             }
+        }
+
+        .black{
+            background: black;
         }
         
         ::-webkit-scrollbar {
