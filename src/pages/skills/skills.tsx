@@ -1,6 +1,5 @@
-import { Content } from "../../components/Content/styles"
 import { Screen } from "../../components/Screen/styles"
-import { Card, Container } from "./styles"
+import { Container } from "./styles"
 import python from "../../imgs/python.png"
 import reactjs from "../../imgs/react.png"
 import github from "../../imgs/git.png"
@@ -36,17 +35,6 @@ export const Skills = () => {
                 <div className="react"></div>
                 <div className="python"></div>
             </Container>
-
-
-            {/* <Content>
-                <Card><img src={python}/></Card>
-                <Card><img src={reactjs}/></Card>
-                <Card><img src={github}/></Card>
-                <Card><img src={rails}/></Card>
-                <Card><img src={python}/></Card>
-                <Card><img src={python}/></Card>
-                
-            </Content> */}
         </Screen>
     )
 }
