@@ -1,9 +1,5 @@
 import { Screen } from "../../components/Screen/styles"
 import { Container } from "./styles"
-import python from "../../imgs/python.png"
-import reactjs from "../../imgs/react.png"
-import github from "../../imgs/git.png"
-import rails from "../../imgs/rails.png"
 
 export const Skills = () => {
     return (
