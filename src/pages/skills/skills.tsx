@@ -14,7 +14,7 @@ export const Skills = () => {
             <Container>
                 <div className="python">
                     <div className="about">
-                        <h1>Python, Ruby, C, C++, JavaScript</h1>
+                        <h1>Programing languages</h1>
                         <span>Meu primeiro contato com python foi 
                             no curso CS50 de harvard. Desde então 
                             é a minha linguagem favorita...
@@ -44,7 +44,7 @@ export const Skills = () => {
                 </div>
                 <div className="automation">
                     <div className="about">
-                        <h1>Git</h1>
+                        <h1>Automation Testing</h1>
                     </div>
                 </div>
             </Container>
