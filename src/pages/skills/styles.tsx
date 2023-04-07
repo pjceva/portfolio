@@ -1,7 +1,8 @@
 import styled from "styled-components";
-import python from "../../imgs/python.png"
-import react from "../../imgs/react.png"
-import git from "../../imgs/git.png"
+import python from "../../imgs/teste-python.jpeg"
+import react from "../../imgs/teste-react.jpeg"
+import git from "../../imgs/teste-git.jpeg"
+import rails from "../../imgs/teste-rails.jpeg"
 
 export const Card = styled.section`
     display: flex;
@@ -51,8 +52,8 @@ export const Container = styled.div`
         overflow: hidden;
         cursor: pointer;
         transition: 0.7s;
-        /* border-radius: 10px; */
-        box-shadow: 0px 5px 15px rgba(245, 245, 245, 0.35);
+        border-radius: 7px;
+        box-shadow: 5px 10px 15px rgba(245, 245, 245, 0.35);
         padding-right: 3px;
         :hover .about{
             position: relative;
@@ -103,6 +104,9 @@ export const Container = styled.div`
     }
     .git{
         background-image: url(${git});
+    }
+    .rails{
+        background-image: url(${rails});
     }
     
 `

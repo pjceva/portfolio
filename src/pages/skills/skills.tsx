@@ -22,31 +22,21 @@ export const Skills = () => {
                     </div>
 
                 </div>
-                <div className="react">
+                <div className="git">
                     <div className="about">
                         <h1>React</h1>
                     </div>
                 </div>
-                <div className="git">
+                <div className="react">
                     <div className="about">
                         <h1>Git</h1>
                     </div>
                 </div>
                 <div className="python"></div>
-                <div className="react"></div>
+                <div className="rails"></div>
                 <div className="python"></div>
             </Container>
 
-
-            {/* <Content>
-                <Card><img src={python}/></Card>
-                <Card><img src={reactjs}/></Card>
-                <Card><img src={github}/></Card>
-                <Card><img src={rails}/></Card>
-                <Card><img src={python}/></Card>
-                <Card><img src={python}/></Card>
-                
-            </Content> */}
         </Screen>
     )
 }
