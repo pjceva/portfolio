@@ -3,6 +3,10 @@ import python from "../../imgs/teste-python.jpeg"
 import react from "../../imgs/teste-react.jpeg"
 import git from "../../imgs/teste-git.jpeg"
 import rails from "../../imgs/teste-rails.jpeg"
+import rails2 from "../../imgs/teste2-rails.jpeg"
+import react2 from "../../imgs/teste2-react.jpeg"
+import mysql from "../../imgs/teste-mysql.jpeg"
+import automation from "../../imgs/automation.jpeg"
 
 export const Card = styled.section`
     display: flex;
@@ -107,6 +111,18 @@ export const Container = styled.div`
     }
     .rails{
         background-image: url(${rails});
+    }
+    .react2{
+        background-image: url(${react2});
+    }
+    .mysql{
+        background-image: url(${mysql});
+    }
+    .rails2{
+        background-image: url(${rails2});
+    }
+    .automation{
+        background-image: url(${automation});
     }
     
 `
