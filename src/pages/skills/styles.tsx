@@ -58,7 +58,6 @@ export const Container = styled.div`
         transition: 0.7s;
         border-radius: 7px;
         box-shadow: 5px 10px 15px rgba(245, 245, 245, 0.35);
-        
         :hover .about{
             position: relative;
             top:0;
@@ -73,7 +72,7 @@ export const Container = styled.div`
             background-color: rgba(0,0,0,0.7);
             height: 100%;
             width: 100%;
-            padding: 0 10px;
+            padding: 0 3px;
 
         }
 
