@@ -15,10 +15,7 @@ export const Card = styled.section`
     border-radius: 10px;
     margin: 0 7.1%;
     overflow: hidden;
-    /* overflow: hidden;
-    :hover{
-        border: 1px solid orange;
-    } */
+    
     img{
         width: 100%;
         border-radius: 10px;
@@ -39,7 +36,6 @@ export const Container = styled.div`
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem 0;
-    /* background-color: gray; */
     overflow: hidden;
 
     @media (max-width: 520px){
@@ -49,7 +45,6 @@ export const Container = styled.div`
     div{
         height: 40%;
         width: 30%;
-        /* background-image: url(${python}); */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
