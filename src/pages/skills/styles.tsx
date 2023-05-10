@@ -8,29 +8,6 @@ import react2 from "../../imgs/teste2-react.jpeg"
 import mysql from "../../imgs/teste-mysql.jpeg"
 import automation from "../../imgs/automation.jpeg"
 
-export const Card = styled.section`
-    display: flex;
-    max-width: 19%;
-    height: 30vh;
-    border-radius: 10px;
-    margin: 0 7.1%;
-    overflow: hidden;
-    /* overflow: hidden;
-    :hover{
-        border: 1px solid orange;
-    } */
-    img{
-        width: 100%;
-        border-radius: 10px;
-        transition: 0.5s;
-        :hover{
-            transform: scale(1.1);
-            cursor: pointer;
-        }
-    }
-
-`
-
 export const Container = styled.div`
     max-width: 1200px;
     height: 60vh;
