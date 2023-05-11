@@ -31,6 +31,9 @@ export const Container = styled.div`
             }
         }
     }
+    .fa-phone-square-alt                                                                                                                                                                                    {
+        transform: rotateY(180deg)
+    }
 
     .social-icons{
         margin-top: 30px;
