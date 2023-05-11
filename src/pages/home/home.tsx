@@ -1,5 +1,5 @@
-import { Content, ImgBox, TextBox, Title } from "./styles"
-import PerfilImg from "../../imgs/pze.png"
+import { Content, ImgBox, Perfil, TextBox, Title } from "./styles"
+import PerfilImg from "../../imgs/perfil.png"
 import { TypeAnimation } from "react-type-animation"
 import { Navbar } from "../../components/Navbar"
 import { Screen } from "../../components/Screen/styles"
@@ -37,7 +37,8 @@ export const Home = () => {
                         </span>
                     </TextBox>
                     <ImgBox>
-                        <img src={PerfilImg} />
+                        {/* <img src={PerfilImg} /> */}
+                        <Perfil/>
                     </ImgBox>
                 </Content>
             </Screen>
