@@ -1,5 +1,8 @@
 import { Screen } from "../../components/Screen/styles"
 import { Container, Line, UText } from "./styles"
+import { motion } from "framer-motion"
+import { fadeIn } from "../../variants"
+
 
 export const Trajectory = () =>{
     return (
@@ -7,10 +10,14 @@ export const Trajectory = () =>{
             <span className="h1">Trajectory</span>
             <Container>
                 <UText>
-                    <span className="nineteen">
+                    <motion.span variants={fadeIn('right', 0.3)} 
+                    initial="hidden" 
+                    whileInView={'show'} 
+                    viewport={{once: false, amount: 0.7}}
+                    className="nineteen">
                         Started studying computer engeneering
                         at Universidade de Brasília
-                    </span>
+                    </motion.span>
                     <span className="twenty">
                         Harvard cs50 and Database course
                     </span>
