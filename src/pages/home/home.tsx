@@ -1,5 +1,4 @@
-import { Content, ImgBox, Perfil, TextBox, Title } from "./styles"
-import PerfilImg from "../../imgs/perfil.png"
+import { Content, ImgBox, TextBox, Title } from "./styles"
 import { TypeAnimation } from "react-type-animation"
 import { Navbar } from "../../components/Navbar"
 import { Screen } from "../../components/Screen/styles"

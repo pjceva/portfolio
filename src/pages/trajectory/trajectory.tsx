@@ -1,5 +1,8 @@
 import { Screen } from "../../components/Screen/styles"
 import { Container, Line, UText } from "./styles"
+import { motion } from "framer-motion"
+import { fadeIn } from "../../variants"
+
 
 export const Trajectory = () =>{
     return (
@@ -7,13 +10,21 @@ export const Trajectory = () =>{
             <span className="h1">Trajectory</span>
             <Container>
                 <UText>
-                    <span className="nineteen">
+                    <motion.span variants={fadeIn('right', 0.5)} 
+                    initial="hidden" 
+                    whileInView={'show'} 
+                    viewport={{once: true, amount: 0.7}}
+                    className="nineteen">
                         Started studying computer engeneering
                         at Universidade de Brasília
-                    </span>
-                    <span className="twenty">
+                    </motion.span>
+                    <motion.span variants={fadeIn('right', 0.3)} 
+                    initial="hidden" 
+                    whileInView={'show'} 
+                    viewport={{once: true, amount: 0.7}}
+                    className="twenty">
                         Harvard cs50 and Database course
-                    </span>
+                    </motion.span>
                 </UText>
 
                 <Line>
@@ -31,14 +42,22 @@ export const Trajectory = () =>{
                 </div>
 
                 <UText>
-                    <span className="twenty-one">
+                    <motion.span variants={fadeIn('left', 0.3)} 
+                    initial="hidden" 
+                    whileInView={'show'} 
+                    viewport={{once: true, amount: 0.1}}
+                    className="twenty-one">
                         Learned Web-Development and started
                         working as a full Stack Developer at 
                         Struct-EJ
-                    </span>
-                    <span className="twenty-two">
+                    </motion.span>
+                    <motion.span variants={fadeIn('left', 0.5)} 
+                    initial="hidden" 
+                    whileInView={'show'} 
+                    viewport={{once: true, amount: 0.1}} 
+                    className="twenty-two">
                         Started my first internship =)
-                    </span>
+                    </motion.span>
                 </UText>
             </Container>
         </Screen>
