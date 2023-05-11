@@ -23,6 +23,12 @@ export const Trajectory = () =>{
                     <div></div>
                     
                 </Line>
+                <div className="year">
+                    <span>2019</span>
+                    <span>2020</span>
+                    <span>2021</span>
+                    <span>2022</span>
+                </div>
 
                 <UText>
                     <span className="twenty-one">

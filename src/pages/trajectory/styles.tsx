@@ -5,6 +5,13 @@ export const Container = styled.div`
     height: 60vh;
     display: flex;
     flex-direction: column;
+
+    .year{
+        margin-top: 17px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+    }
 `
 
 export const UText = styled.div`
@@ -13,6 +20,7 @@ export const UText = styled.div`
     align-items: center;
     span{
         max-width: 17%;
+        font-size: 25px;
     }
     .nineteen{
         margin-left: 5%;
