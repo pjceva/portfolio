@@ -26,7 +26,6 @@ export const Container = styled.div`
     div{
         height: 40%;
         width: 30%;
-        /* background-image: url(${python}); */
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -34,22 +33,22 @@ export const Container = styled.div`
         cursor: pointer;
         transition: 0.7s;
         border-radius: 7px;
-        box-shadow: 5px 10px 15px rgba(245, 245, 245, 0.35);
-        :hover .about{
-            position: relative;
+        box-shadow: 0px 0px 5px rgba(245, 245, 245, 0.35);
+        position: relative;
+        :hover .about{  
             top:0;
             left: 0;
-            cursor: pointer;
         }
 
+
         .about{
-            position: relative;
+            position: absolute;
             top: 0;
             left: -411px;
             background-color: rgba(0,0,0,0.7);
             height: 100%;
-            width: 100%;
-            padding: 0 3px;
+            width: 99%;
+            padding: 2px;
 
         }
 

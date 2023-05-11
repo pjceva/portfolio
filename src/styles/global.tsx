@@ -41,6 +41,7 @@ export const GlobalStyle = createGlobalStyle`
         ::-webkit-scrollbar-thumb {
             background: rgba(255, 255, 255, 0.35);
             border-radius: 10px;
+            
         }
         @media (max-width: 640px) {
             .h1{
