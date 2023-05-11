@@ -10,17 +10,21 @@ export const Trajectory = () =>{
             <span className="h1">Trajectory</span>
             <Container>
                 <UText>
-                    <motion.span variants={fadeIn('right', 0.3)} 
+                    <motion.span variants={fadeIn('right', 0.5)} 
                     initial="hidden" 
                     whileInView={'show'} 
-                    viewport={{once: false, amount: 0.7}}
+                    viewport={{once: true, amount: 0.7}}
                     className="nineteen">
                         Started studying computer engeneering
                         at Universidade de Brasília
                     </motion.span>
-                    <span className="twenty">
+                    <motion.span variants={fadeIn('right', 0.3)} 
+                    initial="hidden" 
+                    whileInView={'show'} 
+                    viewport={{once: true, amount: 0.7}}
+                    className="twenty">
                         Harvard cs50 and Database course
-                    </span>
+                    </motion.span>
                 </UText>
 
                 <Line>
@@ -38,14 +42,22 @@ export const Trajectory = () =>{
                 </div>
 
                 <UText>
-                    <span className="twenty-one">
+                    <motion.span variants={fadeIn('left', 0.3)} 
+                    initial="hidden" 
+                    whileInView={'show'} 
+                    viewport={{once: true, amount: 0.1}}
+                    className="twenty-one">
                         Learned Web-Development and started
                         working as a full Stack Developer at 
                         Struct-EJ
-                    </span>
-                    <span className="twenty-two">
+                    </motion.span>
+                    <motion.span variants={fadeIn('left', 0.5)} 
+                    initial="hidden" 
+                    whileInView={'show'} 
+                    viewport={{once: true, amount: 0.1}} 
+                    className="twenty-two">
                         Started my first internship =)
-                    </span>
+                    </motion.span>
                 </UText>
             </Container>
         </Screen>
