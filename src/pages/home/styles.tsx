@@ -7,14 +7,57 @@ export const Content = styled.section`
     height: 40vh;
     display: flex;    
     /* border: 1px solid red; */
-    
-    span {font-size: 30px;}
-    
-    @media (max-width: 640px) {
-        span{
-            font-size: 25px;
-        }
+
+    .container{
+        height: 330px;
+        width: 230px;
     }
+
+    .container:hover > .card{
+            cursor: pointer;
+            transform: rotateY(180deg)
+        }
+
+    .card{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        transition: transform 1200ms;
+        transform-style: preserve-3d;
+    }
+
+    .front,
+    .back{
+        height: 100%;
+        width: 100%;
+        border-radius: 7px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px rgba(245, 245, 245, 0.45);
+        position: absolute;
+        backface-visibility: hidden;
+    }
+
+    .front{
+        background-image: url(${PerfilImg});
+        
+    }
+
+    .back{
+        background-color: #262626;
+        transform: rotatey(180deg);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;  
+    }
+    
+    
+    span {font-size: 25px;}
+    
     @media (max-width: 400px) {
         span{
             font-size: 20px;
@@ -43,7 +86,7 @@ export const TextBox = styled.div`
 
 export const ImgBox = styled.div`
     display: flex;
-    flex: 1;
+    flex: 1.5;
     justify-content: flex-end;
     /* background-color: white; */
     @media (max-width: 1086px){

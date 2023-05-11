@@ -38,7 +38,18 @@ export const Home = () => {
                     </TextBox>
                     <ImgBox>
                         {/* <img src={PerfilImg} /> */}
-                        <Perfil/>
+                        {/* <Perfil/> */}
+                        <div className="container">
+                            <div className="card">
+                                <div className="front"></div>  
+
+                                <div className="back">
+                                    <span>back of card</span>
+                                    <p>Addicional info on the back of the card</p>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </ImgBox>
                 </Content>
             </Screen>
