@@ -18,13 +18,16 @@ export const Trajectory = () =>{
                         Started studying computer engeneering
                         at Universidade de Brasília
                     </motion.span>
-                    <motion.span variants={fadeIn('right', 0.3)} 
+                    <motion.span variants={fadeIn('left', 0.3)} 
                     initial="hidden" 
                     whileInView={'show'} 
-                    viewport={{once: true, amount: 0.7}}
-                    className="twenty">
-                        Harvard cs50 and Database course
+                    viewport={{once: true, amount: 0.1}}
+                    className="twenty-one">
+                        Learned Web-Development and started
+                        working as a full Stack Developer at 
+                        Struct-EJ
                     </motion.span>
+                    
                 </UText>
 
                 <Line>
@@ -42,14 +45,12 @@ export const Trajectory = () =>{
                 </div>
 
                 <UText>
-                    <motion.span variants={fadeIn('left', 0.3)} 
+                <motion.span variants={fadeIn('right', 0.3)} 
                     initial="hidden" 
                     whileInView={'show'} 
-                    viewport={{once: true, amount: 0.1}}
-                    className="twenty-one">
-                        Learned Web-Development and started
-                        working as a full Stack Developer at 
-                        Struct-EJ
+                    viewport={{once: true, amount: 0.7}}
+                    className="twenty">
+                        Harvard cs50 and Database course
                     </motion.span>
                     <motion.span variants={fadeIn('left', 0.5)} 
                     initial="hidden" 
