@@ -44,8 +44,13 @@ export const Home = () => {
                                 <div className="front"></div>  
 
                                 <div className="back">
-                                    <span>back of card</span>
-                                    <p>Addicional info on the back of the card</p>
+                                    <span>Hobbies</span>
+                                    <li>Soccer </li>
+                                    <li>Travel</li>
+                                    <li>Any games</li>
+                                    <li>Horror Movies</li>
+                                    <li>Outside activities</li>
+                                    
                                 </div>
                             </div>
                         </div>

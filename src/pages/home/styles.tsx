@@ -50,9 +50,13 @@ export const Content = styled.section`
         transform: rotatey(180deg);
         display: flex;
         flex-direction: column;
-        align-items: center;
+        /* align-items: center; */
         justify-content: center;
-        padding: 10px;  
+        padding: 12px; 
+        gap: 2rem;
+        span{
+            margin: 0 auto;
+        } 
     }
     
     
