@@ -20,7 +20,7 @@ export const UText = styled.div`
     align-items: center;
     span{
         width: 15%;
-        font-size: 18.5px;
+        font-size: 22px;
     }
     .nineteen{
         margin-left: 10%;
