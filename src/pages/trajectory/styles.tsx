@@ -19,20 +19,20 @@ export const UText = styled.div`
     display: flex;
     align-items: center;
     span{
-        max-width: 17%;
-        font-size: 25px;
+        width: 15%;
+        font-size: 22px;
     }
     .nineteen{
-        margin-left: 5%;
+        margin-left: 10%;
     }
     .twenty{
-        margin-left: 35%;
+        margin-left: 31%;
     }
     .twenty-one{
-        margin-left: 30%;
+        margin-left: 33%;
     }
     .twenty-two{
-        margin-left: 35%;
+        margin-left: 37%;
     }
 
 `

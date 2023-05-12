@@ -18,31 +18,7 @@ export const Trajectory = () =>{
                         Started studying computer engeneering
                         at Universidade de Brasília
                     </motion.span>
-                    <motion.span variants={fadeIn('right', 0.3)} 
-                    initial="hidden" 
-                    whileInView={'show'} 
-                    viewport={{once: true, amount: 0.7}}
-                    className="twenty">
-                        Harvard cs50 and Database course
-                    </motion.span>
-                </UText>
-
-                <Line>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    
-                </Line>
-                <div className="year">
-                    <span>2019</span>
-                    <span>2020</span>
-                    <span>2021</span>
-                    <span>2022</span>
-                </div>
-
-                <UText>
-                    <motion.span variants={fadeIn('left', 0.3)} 
+                    <motion.span variants={fadeIn('left', 0.5)} 
                     initial="hidden" 
                     whileInView={'show'} 
                     viewport={{once: true, amount: 0.1}}
@@ -50,6 +26,48 @@ export const Trajectory = () =>{
                         Learned Web-Development and started
                         working as a full Stack Developer at 
                         Struct-EJ
+                    </motion.span>
+                    
+                </UText>
+                <motion.div variants={fadeIn('down', 0.2)} 
+                    initial="hidden" 
+                    whileInView={'show'} 
+                    viewport={{once: true, amount: 0.1}}>
+                    <Line>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        
+                    </Line>
+                    </motion.div>
+                <div>
+                    <div className="year">
+                        <motion.span variants={fadeIn('up', 1)} 
+                    initial="hidden" 
+                    whileInView={'show'} 
+                    viewport={{once: true, amount: 0.1}}>2019</motion.span>
+                        <motion.span variants={fadeIn('up', 1.3)} 
+                    initial="hidden" 
+                    whileInView={'show'} 
+                    viewport={{once: true, amount: 0.1}}>2020</motion.span>
+                        <motion.span variants={fadeIn('up', 1.5)} 
+                    initial="hidden" 
+                    whileInView={'show'} 
+                    viewport={{once: true, amount: 0.1}}>2021</motion.span>
+                        <motion.span variants={fadeIn('up', 1.8)} 
+                    initial="hidden" 
+                    whileInView={'show'} 
+                    viewport={{once: true, amount: 0.1}}>2022</motion.span>
+                    </div>
+                </div>
+                <UText>
+                <motion.span variants={fadeIn('right', 0.5)} 
+                    initial="hidden" 
+                    whileInView={'show'} 
+                    viewport={{once: true, amount: 0.7}}
+                    className="twenty">
+                        Harvard cs50 and Database course
                     </motion.span>
                     <motion.span variants={fadeIn('left', 0.5)} 
                     initial="hidden" 
