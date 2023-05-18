@@ -12,8 +12,8 @@ export const Content = styled.section`
     gap: 1rem;
 
     .container{
-        height: 300px;
-        width: 200px;
+        height: 320px;
+        width: 220px;
     }
     
     .container:hover > .card{

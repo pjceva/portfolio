@@ -15,15 +15,20 @@ export const Container = styled.div`
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem 0;
+    gap: 3px;
+    /* padding: 1rem 0; */
     /* background-color: gray; */
     overflow: hidden;
+    @media (max-width: 580px){
+        height: 130vh;
+    }
 
     
 
     div{
         height: 40%;
         width: 30%;
+        min-width: 225px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -45,9 +50,34 @@ export const Container = styled.div`
             left: -411px;
             background-color: rgba(0,0,0,0.7);
             height: 100%;
-            width: 99%;
-            padding: 2px;
+            width: 100%;
+            /* padding: 2px; */
+            span{
+                font-size: 15px;
+            }
 
+        }
+        @media (max-width: 950px){
+            height: 30%;
+            width: 40%;
+            h1{
+                font-size: 17px;
+                
+            }
+            span{
+                font-size: 8px;
+            }
+        }
+        @media (max-width: 580px){
+            width: 90%;
+            height: 15%;
+            box-shadow: 1px 3px 10px rgba(245, 245, 245, 0.35);
+            h1{
+                font-size: 17px;
+            }
+            span{
+                font-size: 8px;
+            }
         }
 
     }

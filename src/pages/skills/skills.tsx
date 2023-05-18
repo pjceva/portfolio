@@ -65,9 +65,9 @@ export const Skills = () => {
                         <h1>Automation Testing</h1>
                         <span>
                             The first time I got in touch with automated testing was 
-                            back in 2020 when I used catch2 on a C++ project.
-                            Nowadays I frequently use RSPEC for automated testing on 
-                            my Ruby on Rails projects.
+                            in 2020 when I used catch2 on a C++ project.
+                            Nowadays I use RSPEC for automated testing on 
+                            Ruby on Rails projects.
                         </span>
                     </div>
                 </div>
