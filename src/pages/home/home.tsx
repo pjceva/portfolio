@@ -26,13 +26,14 @@ export const Home = () => {
                 <Content>
                     <TextBox>
                         <span>
-                        orem ipsum dolor sit amet, consectetur adi
-                        piscing elit, sed do eiusmod tempor incidid
-                        unt ut labore et dolore magna aliqua. Ut enim a
-                        d minim veniam, quis nostrud exercitation ullamco labo
-                        ris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in volup
-                        ate est laborum.
+                        I'm 23 years old, studying Computer Engineering at 
+                        Universidade de Brasília (UnB).
+                        <p>My goal is to be part of a development 
+                        team where I can 
+                        demonstrate my skills, solve problems and, 
+                        in the future, earn 
+                        my permanence in the company by being hired.
+                        </p>
                         </span>
                     </TextBox>
                     <ImgBox>
