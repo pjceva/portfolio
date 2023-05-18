@@ -4,7 +4,7 @@ import pze from "../../imgs/pze.png"
 
 export const Content = styled.section`
     max-width: 1200px;
-    height: 40svh;
+    height: 40lvh;
     display: flex;
     align-items: center;
     /* border: 1px solid red; */

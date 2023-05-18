@@ -10,7 +10,7 @@ import automation from "../../imgs/automation.jpeg"
 
 export const Container = styled.div`
     max-width: 1200px;
-    height: 60svh;
+    height: 60lvh;
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +21,7 @@ export const Container = styled.div`
     /* background-color: gray; */
     overflow: hidden;
     @media (max-width: 580px){
-        height: 130svh;
+        height: 130lvh;
     }
 
     
