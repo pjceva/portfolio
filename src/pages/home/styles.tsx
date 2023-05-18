@@ -5,14 +5,17 @@ import pze from "../../imgs/pze.png"
 export const Content = styled.section`
     max-width: 1200px;
     height: 40vh;
-    display: flex;    
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
     /* border: 1px solid red; */
+    gap: 1rem;
 
     .container{
-        height: 330px;
-        width: 230px;
+        height: 300px;
+        width: 200px;
     }
-
+    
     .container:hover > .card{
             cursor: pointer;
             transform: rotateY(180deg)
@@ -52,21 +55,12 @@ export const Content = styled.section`
         flex-direction: column;
         /* align-items: center; */
         justify-content: center;
-        padding: 12px; 
         gap: 2rem;
         span{
             margin: 0 auto;
-        } 
-    }
-    
-    
-    span {font-size: 25px;}
-    
-    @media (max-width: 400px) {
-        span{
-            font-size: 20px;
         }
     }
+     
 
 `
 
@@ -75,25 +69,21 @@ export const Title = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 2rem;
-    @media (max-width: 400px) {
-        height: 4rem;
-    }
+    /* margin-top: 2rem; */
 
 `
 
 export const TextBox = styled.div`
     display: flex;
     flex: 2;
-    margin: auto 0;
+    /* margin: auto 0; */
 `
 
 export const ImgBox = styled.div`
     display: flex;
-    flex: 1.5;
+    flex: 1;
     justify-content: flex-end;
-    /* background-color: white; */
-    @media (max-width: 1086px){
+    @media (max-width: 640px) {
         display: none;
     }
 

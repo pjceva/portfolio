@@ -15,6 +15,9 @@ export const GlobalStyle = createGlobalStyle`
             font-size: 40px;
             color: #AEA1EA;
         }
+        span{
+            font-size: 25px;
+        }
         .btn{
             display: block;
             margin: 50px auto;
@@ -47,10 +50,17 @@ export const GlobalStyle = createGlobalStyle`
             .h1{
                 font-size: 35px;
             }
+            span{
+                font-size: 20px;
+            }
+            
         }
-        @media (max-width: 400px) {
+        @media (max-width: 305px){
             .h1{
-                font-size: 24px;
+                font-size: 25px;
+            }
+            span{
+                font-size: 16px;
             }
         }
     }
