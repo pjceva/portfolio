@@ -52,8 +52,17 @@ export const Container = styled.div`
             background-color: rgba(0,0,0,0.7);
             height: 100%;
             width: 100%;
-
         }
+
+        @media (max-width: 1100px){
+            h1{
+                font-size: 17px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+
         @media (max-width: 950px){
             height: 30%;
             width: 40%;

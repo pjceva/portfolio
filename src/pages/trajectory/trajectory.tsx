@@ -10,24 +10,25 @@ export const Trajectory = () =>{
             <span className="h1">Trajectory</span>
             <Container>
                 <UText>
-                    <motion.span variants={fadeIn('right', 0.5)} 
-                    initial="hidden" 
-                    whileInView={'show'} 
-                    viewport={{once: true, amount: 0.7}}
-                    className="nineteen">
-                        Started studying computer engeneering
-                        at Universidade de Brasília
-                    </motion.span>
-                    <motion.span variants={fadeIn('left', 0.5)} 
-                    initial="hidden" 
-                    whileInView={'show'} 
-                    viewport={{once: true, amount: 0.1}}
-                    className="twenty-one">
-                        Learned Web-Development and started
-                        working as a full Stack Developer at 
-                        Struct-EJ
-                    </motion.span>
-                    
+                    <div className="up">
+                        <motion.span variants={fadeIn('right', 0.5)} 
+                        initial="hidden" 
+                        whileInView={'show'} 
+                        viewport={{once: true, amount: 0.7}}
+                        className="nineteen">
+                            Started studying computer engeneering
+                            at Universidade de Brasília
+                        </motion.span>
+                        <motion.span variants={fadeIn('left', 0.5)} 
+                        initial="hidden" 
+                        whileInView={'show'} 
+                        viewport={{once: true, amount: 0.1}}
+                        className="twenty-one">
+                            Learned Web-Development and started
+                            working as a full Stack Developer at 
+                            Struct-EJ
+                        </motion.span>
+                    </div>
                 </UText>
                 <motion.div variants={fadeIn('down', 0.2)} 
                     initial="hidden" 
@@ -63,20 +64,23 @@ export const Trajectory = () =>{
                     </div>
                 </div>
                 <UText>
-                <motion.span variants={fadeIn('right', 0.5)} 
-                    initial="hidden" 
-                    whileInView={'show'} 
-                    viewport={{once: true, amount: 0.7}}
-                    className="twenty">
-                        Harvard cs50 and Database course
-                    </motion.span>
-                    <motion.span variants={fadeIn('left', 0.5)} 
-                    initial="hidden" 
-                    whileInView={'show'} 
-                    viewport={{once: true, amount: 0.1}} 
-                    className="twenty-two">
-                        Started my first internship =)
-                    </motion.span>
+                    <div className="bottom">
+                        <motion.span variants={fadeIn('right', 0.5)} 
+                        initial="hidden" 
+                        whileInView={'show'} 
+                        viewport={{once: true, amount: 0.7}}
+                        className="twenty">
+                            Harvard cs50 and Database course
+                        </motion.span>
+                        <motion.span variants={fadeIn('left', 0.5)} 
+                        initial="hidden" 
+                        whileInView={'show'} 
+                        viewport={{once: true, amount: 0.1}} 
+                        className="twenty-two">
+                            Started my first internship =)
+                        </motion.span>
+                    </div>
+                
                 </UText>
             </Container>
         </Screen>

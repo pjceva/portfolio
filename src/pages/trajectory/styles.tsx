@@ -66,12 +66,21 @@ export const Container = styled.div`
 `
 
 export const UText = styled.div`
-    flex: 1;
-    display: flex;
-    align-items: center;
+    margin: auto 0;
+    .up{
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+    }
+    .bottom{
+        flex: 1;
+        display: flex;
+    }
+    
     span{
         width: 18%;
         font-size: 18px;
+        margin: 20px 0;
     }
     .nineteen{
         margin-left: 10%;
