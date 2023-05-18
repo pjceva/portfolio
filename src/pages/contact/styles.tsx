@@ -2,9 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     .contact-left{
         flex: 1.5;
+        min-width: 209px;
         p{
             margin-top: 30px;
             i{
@@ -16,6 +18,7 @@ export const Container = styled.div`
     }
     .contact-right{
         flex: 2;
+        min-width: 300px;
         form{
             width: 100%;
             input, textarea{
@@ -53,6 +56,12 @@ export const Container = styled.div`
 
     .btn2{
         display: inline-block;
+    }
+
+    @media (max-width: 400px){
+        .contact-right, .contact-left{
+            min-width: 170px;
+        }
     }
     
 `

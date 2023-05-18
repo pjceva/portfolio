@@ -113,7 +113,7 @@ export const UText = styled.div`
             font-size: 11px;
         }
         .nineteen{
-            margin-left: 12%;
+            margin-left: 13%;
         }
         .twenty{
             margin-left: 30%;
@@ -123,6 +123,11 @@ export const UText = styled.div`
         }
         .twenty-two{
             margin-left: 30%;
+        }
+    }
+    @media (max-width: 330px){
+        .nineteen{
+            margin-left: 16%;
         }
     }
     
