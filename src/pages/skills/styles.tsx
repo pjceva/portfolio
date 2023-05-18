@@ -11,21 +11,25 @@ import automation from "../../imgs/automation.jpeg"
 export const Container = styled.div`
     max-width: 1200px;
     height: 60vh;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding: 1rem 0;
+    gap: 3px;
+    /* padding: 1rem 0; */
     /* background-color: gray; */
     overflow: hidden;
+    @media (max-width: 580px){
+        height: 130vh;
+    }
 
-    @media (max-width: 520px){
-            height: 120vh;
-        }
+    
 
     div{
         height: 40%;
         width: 30%;
+        min-width: 225px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -47,33 +51,42 @@ export const Container = styled.div`
             left: -411px;
             background-color: rgba(0,0,0,0.7);
             height: 100%;
-            width: 99%;
-            padding: 2px;
+            width: 100%;
+        }
 
+        @media (max-width: 1100px){
+            h1{
+                font-size: 17px;
+            }
+            p{
+                font-size: 14px;
+            }
         }
 
         @media (max-width: 950px){
             height: 30%;
             width: 40%;
             h1{
-                font-size: 1.3rem;
+                font-size: 16px;
+                
             }
-            span{
-                font-size: 0.9rem;
+            p{
+                font-size: 13.5px;
             }
         }
-        @media (max-width: 520px){
+        @media (max-width: 580px){
             width: 90%;
             height: 15%;
             box-shadow: 1px 3px 10px rgba(245, 245, 245, 0.35);
+        }
+        @media (max-width: 305px){
             h1{
-                font-size: 1rem;
+                font-size: 15px;
             }
-            span{
-                font-size: 0.85rem;
+            p{
+                font-size: 12px;
             }
         }
-
     }
     .python{
         background-image: url(${python});

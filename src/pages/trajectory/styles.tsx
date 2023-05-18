@@ -10,17 +10,77 @@ export const Container = styled.div`
         margin-top: 17px;
         display: flex;
         justify-content: space-around;
-        font-size: 20px;
+        span{
+            font-size: 18px;
+        }
+        @media (max-width: 640px){
+            span{
+                font-size: 15px;
+            }
+        }
+        @media (max-width: 480px){
+            span{
+                font-size: 13px;
+            }
+            
+        }
+
     }
+
+    .line{
+        background-color: white;
+        height: 2px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        
+        div{
+            position: relative;
+            background-color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+        }
+        @media (max-width: 950px){
+            div{
+                width: 17px;
+                height: 17px;
+            }
+        }
+        @media (max-width: 640px){
+            height: 1.5px;
+            div{
+                width: 15px;
+                height: 15px;
+            }
+        }
+        @media (max-width: 640px){
+            div{
+                width: 13px;
+                height: 13px;
+            }
+        }
+        
+    }
+
 `
 
 export const UText = styled.div`
-    flex: 1;
-    display: flex;
-    align-items: center;
+    margin: auto 0;
+    .up{
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+    }
+    .bottom{
+        flex: 1;
+        display: flex;
+    }
+    
     span{
-        width: 15%;
-        font-size: 22px;
+        width: 18%;
+        font-size: 18px;
+        margin: 20px 0;
     }
     .nineteen{
         margin-left: 10%;
@@ -32,23 +92,44 @@ export const UText = styled.div`
         margin-left: 33%;
     }
     .twenty-two{
-        margin-left: 37%;
+        margin-left: 35%;
     }
 
-`
-
-export const Line = styled.section`
-
-    background-color: white;
-    height: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    div{
-        position: relative;
-        background-color: white;
-        width: 20px;
-        height: 20px;
-        border-radius: 50px;
+    @media (max-width: 950px){
+        span{
+            font-size: 15px;
+        }
     }
+
+    @media (max-width: 640px){
+        span{
+            font-size: 13px;
+        }
+    }
+
+    @media (max-width: 480px){
+        span{
+            width: 25%;
+            font-size: 11px;
+        }
+        .nineteen{
+            margin-left: 13%;
+        }
+        .twenty{
+            margin-left: 30%;
+        }
+        .twenty-one{
+            margin-left: 23%;
+        }
+        .twenty-two{
+            margin-left: 30%;
+        }
+    }
+    @media (max-width: 330px){
+        .nineteen{
+            margin-left: 16%;
+        }
+    }
+    
+
 `

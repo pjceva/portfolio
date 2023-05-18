@@ -8,7 +8,8 @@ export const Screen = styled.section`
     padding: 0 20%;
     justify-content: center;
     margin: 0 auto;
-    @media (max-width: 950px) {
+    @media (max-width: 1400px) {
         padding: 0 10%;
     }
+    
 `

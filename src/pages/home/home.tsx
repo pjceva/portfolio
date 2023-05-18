@@ -37,8 +37,6 @@ export const Home = () => {
                         </span>
                     </TextBox>
                     <ImgBox>
-                        {/* <img src={PerfilImg} /> */}
-                        {/* <Perfil/> */}
                         <div className="container">
                             <div className="card">
                                 <div className="front"></div>  
