@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Screen = styled.section`
     display: flex;
     max-width: 1200px;
-    min-height: 100vh;
+    min-height: 100svh;
     flex-direction: column;
     padding: 0 20%;
     justify-content: center;

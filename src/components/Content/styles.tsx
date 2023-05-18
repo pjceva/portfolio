@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Content = styled.section`
     max-width: 1200px;
-    height: 75vh;
+    height: 75svh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
