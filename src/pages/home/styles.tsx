@@ -6,7 +6,6 @@ export const Content = styled.section`
     max-width: 1200px;
     height: 40vh;
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
     /* border: 1px solid red; */
     gap: 1rem;

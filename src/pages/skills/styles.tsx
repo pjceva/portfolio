@@ -11,6 +11,7 @@ import automation from "../../imgs/automation.jpeg"
 export const Container = styled.div`
     max-width: 1200px;
     height: 60vh;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -51,35 +52,32 @@ export const Container = styled.div`
             background-color: rgba(0,0,0,0.7);
             height: 100%;
             width: 100%;
-            /* padding: 2px; */
-            span{
-                font-size: 15px;
-            }
 
         }
         @media (max-width: 950px){
             height: 30%;
             width: 40%;
             h1{
-                font-size: 17px;
+                font-size: 16px;
                 
             }
-            span{
-                font-size: 8px;
+            p{
+                font-size: 13.5px;
             }
         }
         @media (max-width: 580px){
             width: 90%;
             height: 15%;
             box-shadow: 1px 3px 10px rgba(245, 245, 245, 0.35);
+        }
+        @media (max-width: 300px){
             h1{
-                font-size: 17px;
+                font-size: 15px;
             }
-            span{
-                font-size: 8px;
+            p{
+                font-size: 12px;
             }
         }
-
     }
     .python{
         background-image: url(${python});

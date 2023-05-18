@@ -46,6 +46,8 @@ export const GlobalStyle = createGlobalStyle`
             border-radius: 10px;
             
         }
+
+
         @media (max-width: 640px) {
             .h1{
                 font-size: 35px;
