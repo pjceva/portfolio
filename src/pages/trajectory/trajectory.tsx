@@ -1,5 +1,5 @@
 import { Screen } from "../../components/Screen/styles"
-import { Container, Line, UText } from "./styles"
+import { Container, UText } from "./styles"
 import { motion } from "framer-motion"
 import { fadeIn } from "../../variants"
 
@@ -33,13 +33,14 @@ export const Trajectory = () =>{
                     initial="hidden" 
                     whileInView={'show'} 
                     viewport={{once: true, amount: 0.1}}>
-                    <Line>
+                    
+                    <div className="line">
                         <div></div>
                         <div></div>
                         <div></div>
                         <div></div>
-                        
-                    </Line>
+                    </div>
+
                     </motion.div>
                 <div>
                     <div className="year">

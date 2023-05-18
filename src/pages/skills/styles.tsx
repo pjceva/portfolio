@@ -70,7 +70,7 @@ export const Container = styled.div`
             height: 15%;
             box-shadow: 1px 3px 10px rgba(245, 245, 245, 0.35);
         }
-        @media (max-width: 300px){
+        @media (max-width: 305px){
             h1{
                 font-size: 15px;
             }
