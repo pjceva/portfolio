@@ -3,27 +3,26 @@ import { Container } from "./styles"
 import CV from "../../imgs/CurriculoPedroJose.pdf"
 import { useRef } from "react";
 import emailjs from '@emailjs/browser';
-import React from "react";
 //MutableRefObject<undefined>
 
 export const Contact = () =>{
     const form = useRef<HTMLFormElement>(null);
-    // React.useEffect(() => {
-    //     if (form.current) {
-    //       form.current.focus();
-    //     }
-    //   }, []);
 
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();
-        const currentForm = form.current;
-        if (currentForm == null) return;
+        const currentForm = form.current
+        if (currentForm == null){
+            console.log("null");
+            return;
+        }
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', currentForm.current, 'YOUR_PUBLIC_KEY')
+        emailjs.sendForm('service_53vlwnj', 'template_2fxiypd', currentForm.current, 'NkaXsl4fwV4nU_ad3')
         .then((result) => {
             console.log(result.text);
+            console.log("message sent")
         }, (error) => {
             console.log(error.text);
+            console.log("error")
         });
     };
 
@@ -47,7 +46,7 @@ export const Contact = () =>{
                                 <input type="text" name="Name" placeholder="Your name" required />
                                 <input type="email" name="Email" placeholder="Your email" required/>
                                 <textarea name="Message" rows={6} placeholder="Your message"></textarea>
-                                <button type="submit" className="btn black btn2">Submit</button>
+                                <button type="submit" value="Send" className="btn black btn2">Submit</button>
                             </form>
                             
                         </div>
