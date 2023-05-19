@@ -1,6 +1,6 @@
 import { Screen } from "../../components/Screen/styles"
 import { Container } from "./styles"
-import CV from "../../imgs/CVPedroJose.pdf"
+import CV from "../../imgs/CurriculoPedroJose.pdf"
 
 export const Contact = () =>{
     return (
