@@ -1,8 +1,32 @@
 import { Screen } from "../../components/Screen/styles"
 import { Container } from "./styles"
 import CV from "../../imgs/CurriculoPedroJose.pdf"
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
+import React from "react";
+//MutableRefObject<undefined>
 
 export const Contact = () =>{
+    const form = useRef<HTMLFormElement>(null);
+    // React.useEffect(() => {
+    //     if (form.current) {
+    //       form.current.focus();
+    //     }
+    //   }, []);
+
+    const sendEmail = (e: React.FormEvent) => {
+        e.preventDefault();
+        const currentForm = form.current;
+        if (currentForm == null) return;
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', currentForm.current, 'YOUR_PUBLIC_KEY')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
+
     return (
         
         <Screen>
@@ -19,7 +43,7 @@ export const Contact = () =>{
                             <a href={CV} download className="btn btn2">Download CV</a>
                         </div>
                         <div className="contact-right">
-                            <form>
+                            <form ref={form} onSubmit={sendEmail}>
                                 <input type="text" name="Name" placeholder="Your name" required />
                                 <input type="email" name="Email" placeholder="Your email" required/>
                                 <textarea name="Message" rows={6} placeholder="Your message"></textarea>
