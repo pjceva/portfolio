@@ -26,12 +26,17 @@ export const Container = styled.div`
                 border: 0px;
                 outline: none;
                 background: #262626;
-                padding: 15px;
+                padding: 14px;
                 margin: 15px 0;
                 color: #fff;
                 font-size: 18px;
                 border-radius: 6px;
+                border: 1px solid #262626;
+                :focus{
+                    border: 1px solid #AEA1EA;
+                }
             }
+            
         }
     }
     .fa-phone-square-alt                                                                                                                                                                                    {
