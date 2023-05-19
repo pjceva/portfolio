@@ -58,6 +58,9 @@ export const Content = styled.section`
         span{
             margin: 0 auto;
         }
+        li{
+            padding-left: 10px;
+        }
     }
      
 

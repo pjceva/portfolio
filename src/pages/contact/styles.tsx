@@ -63,6 +63,15 @@ export const Container = styled.div`
         display: inline-block;
     }
 
+    .success{
+        font-size: 15px;
+        color: limegreen;
+        display: none;
+        margin-left: 13px;
+        transition: .7s;
+        
+    }
+
     @media (max-width: 400px){
         .contact-right, .contact-left{
             min-width: 170px;
