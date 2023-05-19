@@ -16,10 +16,8 @@ export const Contact = () =>{
         emailjs.sendForm('service_53vlwnj', 'template_2fxiypd', currentForm, 'NkaXsl4fwV4nU_ad3')
         .then((result) => {
             console.log(result.text);
-            console.log("message sent")
         }, (error) => {
             console.log(error.text);
-            console.log("error")
         });
     };
 
