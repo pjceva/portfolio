@@ -11,12 +11,9 @@ export const Contact = () =>{
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault();
         const currentForm = form.current
-        if (currentForm == null){
-            console.log("null");
-            return;
-        }
+        if (currentForm == null) return;
 
-        emailjs.sendForm('service_53vlwnj', 'template_2fxiypd', currentForm.current, 'NkaXsl4fwV4nU_ad3')
+        emailjs.sendForm('service_53vlwnj', 'template_2fxiypd', currentForm, 'NkaXsl4fwV4nU_ad3')
         .then((result) => {
             console.log(result.text);
             console.log("message sent")
@@ -43,9 +40,9 @@ export const Contact = () =>{
                         </div>
                         <div className="contact-right">
                             <form ref={form} onSubmit={sendEmail}>
-                                <input type="text" name="Name" placeholder="Your name" required />
-                                <input type="email" name="Email" placeholder="Your email" required/>
-                                <textarea name="Message" rows={6} placeholder="Your message"></textarea>
+                                <input type="text" name="name" placeholder="Your name" required />
+                                <input type="email" name="email" placeholder="Your email" required/>
+                                <textarea name="message" rows={6} placeholder="Your message"></textarea>
                                 <button type="submit" value="Send" className="btn black btn2">Submit</button>
                             </form>
                             
