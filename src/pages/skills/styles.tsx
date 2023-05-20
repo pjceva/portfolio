@@ -10,26 +10,19 @@ import automation from "../../imgs/automation.jpeg"
 
 export const Container = styled.div`
     max-width: 1200px;
-    height: 60lvh;
-    margin-top: 20px;
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     gap: 3px;
-    /* padding: 1rem 0; */
-    /* background-color: gray; */
-    overflow: hidden;
-    @media (max-width: 580px){
-        height: 130lvh;
-    }
-
-    
+    overflow: hidden; 
 
     div{
-        height: 40%;
+        height: 220px;
         width: 30%;
         min-width: 225px;
+        margin-bottom: 20px;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -52,6 +45,11 @@ export const Container = styled.div`
             background-color: rgba(0,0,0,0.7);
             height: 100%;
             width: 100%;
+            .text{
+                height: 100%;
+                width: 90%;
+                margin: 0 auto;
+            }
         }
 
         @media (max-width: 1100px){
@@ -64,7 +62,6 @@ export const Container = styled.div`
         }
 
         @media (max-width: 950px){
-            height: 30%;
             width: 40%;
             h1{
                 font-size: 16px;
@@ -76,7 +73,8 @@ export const Container = styled.div`
         }
         @media (max-width: 580px){
             width: 90%;
-            height: 15%;
+            height: 150px;
+            /* height: 15%; */
             box-shadow: 1px 3px 10px rgba(245, 245, 245, 0.35);
         }
         @media (max-width: 305px){
