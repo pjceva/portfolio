@@ -14,8 +14,8 @@ export const Skills = () => {
                         <section className="text">
                             <h1>Programing languages</h1>
                             <p>Python, Ruby, C, C++ and JavaScript are 
-                            some of the programing languages I learned
-                            during my journy in computer engeneering so far.
+                            some of the programming languages I learned
+                            during my journey in computer engeneering so far.
                             </p>
 
                         </section>
@@ -28,7 +28,7 @@ export const Skills = () => {
                     <section className="text">
                         <h1>Git/Github</h1>
                         <p>
-                            After completing a begginers course on Udemy,
+                            After completing a beginner's course on Udemy,
                             I got in touch with Git and Github while working
                             as a Full Stack developer at Struct-EJ.
                         </p>
@@ -58,8 +58,8 @@ export const Skills = () => {
                         <h1>MySQL</h1>
                         <p>
                             I completed a basic MySQL course in 2020 and 
-                            as an intern on Ministério da Justiça back in 2022
-                            one of my jobs was to quickly search information in 
+                            as an intern on Ministério da Justiça back in 2022.
+                            One of my jobs was to quickly search information in 
                             their databases via SQL commands.
                         </p>
 

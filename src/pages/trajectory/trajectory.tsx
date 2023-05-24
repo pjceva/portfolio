@@ -16,7 +16,7 @@ export const Trajectory = () =>{
                         whileInView={'show'} 
                         viewport={{once: true, amount: 0.7}}
                         className="nineteen">
-                            Started studying computer engeneering
+                            Started studying Computer Engineering
                             at Universidade de Brasília
                         </motion.span>
                         <motion.span variants={fadeIn('left', 0.5)} 
